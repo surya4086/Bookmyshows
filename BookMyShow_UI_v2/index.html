@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BookMyShow — Home</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+<div id="navbar"></div>
+<section class="hero">
+  <div class="hero-glow"></div><div class="hero-shape"></div>
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <span class="kicker">MOVIES • SHOWS • EXPERIENCES</span>
+      <h1>Everything you<br><span>love to watch.</span></h1>
+      <p>Find a movie, pick your theatre, choose your seats and book your tickets — all in one place.</p>
+      <div class="search-box">
+        <span>⌕</span><input id="heroSearch" autocomplete="off" placeholder="Search movies by name...">
+        <button id="heroSearchBtn" class="btn primary">Search</button>
+        <div id="suggestions" class="suggestions"></div>
+      </div>
+      <div class="hero-tags"><a href="pages/movies.html">Explore movies →</a><a href="pages/theaters.html">Find theatres →</a></div>
+    </div>
+  </div>
+</section>
+
+<main>
+<section class="section">
+<div class="container">
+  <div class="section-head"><div><span class="kicker">NOW SHOWING</span><h2>Pick your next movie</h2></div><a class="see-all" href="pages/movies.html">See all movies →</a></div>
+  <div id="homeMovies" class="movie-grid"></div>
+</div>
+</section>
+<section class="section city-section">
+<div class="container">
+  <div class="section-head"><div><span class="kicker">BOOK BY CITY</span><h2>Where are you watching?</h2></div></div>
+  <div id="homeCities" class="city-grid"></div>
+</div>
+</section>
+<section class="section">
+<div class="container why-grid">
+  <div><span class="big-icon">🎬</span><h3>Discover</h3><p>Search by movie title, genre or language.</p></div>
+  <div><span class="big-icon">🏢</span><h3>Choose</h3><p>Explore theatres, screens and show timings.</p></div>
+  <div><span class="big-icon">💺</span><h3>Book</h3><p>Select available seats and confirm your ticket.</p></div>
+</div>
+</section>
+</main>
+<footer class="footer"><div class="container footer-inner"><b>Book<span>My</span>Show</b><span>Movie Ticket Booking System</span></div></footer>
+<div id="toast"></div>
+<script src="js/config.js"></script><script src="js/api.js"></script><script src="js/app.js"></script><script src="js/home.js"></script>
+</body></html>
